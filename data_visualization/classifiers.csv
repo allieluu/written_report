@@ -1,0 +1,13 @@
+Classifier,Frequency
+SVM,6
+Naive Bayes,3
+Random Forests,2
+Random Subspace,1
+Random Linear Oracle,1
+Logistic Regression,2
+KNN,2
+Linear Discriminant,3
+Quadratic Classifier,1
+Decision Tree,1
+LeNet-5,1
+Decision Stump,2

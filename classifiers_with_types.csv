@@ -1,0 +1,24 @@
+Classifier,Type,Number
+SVM,"sequential minimal optimization",1
+SVM,LibLinear,1
+SVM,"Radial Basis Function",1
+SVM,"Polynomial Regression",1
+SVM,"Linear Regression",2
+SVM,Gaussian,1
+"Naive Bayes",other,2
+"Naive Bayes",Gaussian,1
+"Random Forests",reliefF,1
+"Random Forests","Multiple Estimators",1
+"Random Forests","Weighted Votes",1
+"Random Subspace","Sequential Minimal Optimization",1
+"Random Linear Oracle",N/A,1
+"Logistic Regression","Gaussian Process",1
+"Logistic Regression",Sparse,1
+"KNN",other,2
+"Linear Discriminant",Fisher,2
+"Linear Discriminant",other,1
+"Quadratic Classifier",N/A,1
+"Decision tree",N/A,1
+"LeNet-5",N/A,1
+"Decision Stump",AdaBoost,1
+"Decision Stump","Majority Vote",1

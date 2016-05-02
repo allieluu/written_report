@@ -1,40 +1,3 @@
-@article{Armananzas2016,
-abstract = {Functional magnetic resonance imaging (fMRI) is one of the most promising non-invasive techniques for early Alzheimer's disease (AD) diagnosis. In this paper, we explore the application of different machine learning techniques to the classification of fMRI data for this purpose. The functional images were firstly preprocessed using the statistical parametric mapping toolbox to output individual maps of statistically activated voxels. A fast filter was applied afterwards to select voxels commonly activated across demented and non-demented groups. Four feature ranking selection techniques were embedded into a wrapper scheme using an inner-outer loop for the selection of relevant voxels. The wrapper approach was guided by the performance of six pattern recognition models, three of which were ensemble classifiers based on stochastic searches. Final classification performance was assessed from the nested internal and external cross-validation loops taking several voxel sets ordered by importance. Numerical performance was evaluated using statistical tests, and the best combination of voxel selection and classification reached a 97.14{\%} average accuracy. Results repeatedly pointed out Brodmann regions with distinct activation patterns between demented and non demented profiles, indicating that the machine learning analysis described is a powerful method to detect differences in several brain regions between both groups.},
-author = {Armananzas, R and Iglesias, M and Morales, D A and Alonso-Nanclares, L},
-doi = {10.1109/JBHI.2016.2538559},
-file = {:Users/allisonburton/Downloads/voxel.pdf:pdf},
-issn = {2168-2194},
-journal = {IEEE J Biomed Health Inform},
-number = {X},
-pages = {1--7},
-title = {{Voxel-based diagnosis of Alzheimer's disease using classifier ensembles}},
-volume = {XX},
-year = {2016}
-}
-@incollection{Kvisito,
-author = {Kvisit{\"{o}}, Julia and Soininen, Hilkka and Pihlajam{\"{a}}ki, Maija},
-chapter = {19},
-doi = {10.5772/47912},
-file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Kvisit{\"{o}}, Soininen, Pihlajam{\"{a}}ki - Unknown - Functional MRI in Alzheimer's Disease.pdf:pdf},
-title = {{Functional MRI in Alzheimer's Disease}}
-}
-@article{Moradi2015,
-abstract = {Mild cognitive impairment (MCI) is a transitional stage between age-related cognitive decline and Alzheimer's disease (AD). For the effective treatment of AD, it would be important to identify MCI patients at high risk for conversion to AD. In this study, we present a novel magnetic resonance imaging (MRI)-based method for predicting the MCI-to-AD conversion from one to three years before the clinical diagnosis. First, we developed a novel MRI biomarker of MCI-to-AD conversion using semi-supervised learning and then integrated it with age and cognitive measures about the subjects using a supervised learning algorithm resulting in what we call the aggregate biomarker. The novel characteristics of the methods for learning the biomarkers are as follows: 1) We used a semi-supervised learning method (low density separation) for the construction of MRI biomarker as opposed to more typical supervised methods; 2) We performed a feature selection on MRI data from AD subjects and normal controls without using data from MCI subjects via regularized logistic regression; 3) We removed the aging effects from the MRI data before the classifier training to prevent possible confounding between AD and age related atrophies; and 4) We constructed the aggregate biomarker by first learning a separate MRI biomarker and then combining it with age and cognitive measures about the MCI subjects at the baseline by applying a random forest classifier. We experimentally demonstrated the added value of these novel characteristics in predicting the MCI-to-AD conversion on data obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database. With the ADNI data, the MRI biomarker achieved a 10-fold cross-validated area under the receiver operating characteristic curve (AUC) of 0.7661 in discriminating progressive MCI patients (pMCI) from stable MCI patients (sMCI). Our aggregate biomarker based on MRI data together with baseline cognitive measurements and age achieved a 10-fold cross-validated AUC score of 0.9020 in discriminating pMCI from sMCI. The results presented in this study demonstrate the potential of the suggested approach for early AD diagnosis and an important role of MRI in the MCI-to-AD conversion prediction. However, it is evident based on our results that combining MRI data with cognitive test results improved the accuracy of the MCI-to-AD conversion prediction.},
-author = {Moradi, Elaheh and Pepe, Antonietta and Gaser, Christian and Huttunen, Heikki and Tohka, Jussi},
-doi = {10.1016/j.neuroimage.2014.10.002},
-file = {:Users/allisonburton/Downloads/moradi{\_}et{\_}al.pdf:pdf},
-isbn = {1053-8119},
-issn = {10538119},
-journal = {NeuroImage},
-keywords = {ADNI,Alzheimer's disease,Classification,Early diagnosis,Feature selection,Low density separation,Magnetic resonance imaging,Mild cognitive impairment,Semi-supervised learning,Support vector machine,low density separation,mild cognitive impairment},
-pages = {398--412},
-pmid = {25312773},
-publisher = {Elsevier Inc.},
-title = {{Machine learning framework for early MRI-based Alzheimer's conversion prediction in MCI subjects}},
-url = {http://linkinghub.elsevier.com/retrieve/pii/S1053811914008131$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/25312773},
-volume = {104},
-year = {2015}
-}
 @article{Morra2010,
 abstract = {We compared four automated methods for hippocampal segmentation using different machine learning algorithms (1) hierarchical AdaBoost, (2) Support Vector Machines (SVM) with manual feature selection, (3) hierarchical SVM with automated feature selection (Ada-SVM), and (4) a publicly available brain segmentation package (FreeSurfer). We trained our approaches using T1- weighted brain MRI's from 30 subjects (10 normal elderly, 10 mild cognitive impairment (MCI), and 10 Alzheimer's disease (AD)), and tested on an independent set of 40 subjects (20 normal, 20 AD). Manually segmented gold standard hippocampal tracings were available for all subjects (training and testing). We assessed each approach's accuracy relative to manual segmentations, and its power to map AD effects. We then converted the segmentations into parametric surfaces to map disease effects on anatomy. After surface reconstruction, we computed significance maps, and overall corrected p -values, for the 3D profile of shape differences between AD and normal subjects. Our AdaBoost and Ada-SVM segmentations compared favorably with the manual segmentations and detected disease effects as well as FreeSurfer on the data tested. Cumulative p - value plots, in conjunction with the False Discovery Rate method, were used to examine the power of each method to detect correlations with diagnosis and cognitive scores. We also evaluated how segmentation accuracy depended on the size of the training set, providing practical information for future users of this technique. Index},
 annote = {- Explains why SVM works well},
@@ -50,34 +13,191 @@ title = {{Comparison of AdaBoost and Support Vector Machines for Detecting Alzhe
 volume = {29},
 year = {2010}
 }
-@misc{Pereira2009,
-abstract = {Interpreting brain image experiments requires analysis of complex, multivariate data. In recent years, one analysis approach that has grown in popularity is the use of machine learning algorithms to train classifiers to decode stimuli, mental states, behaviours and other variables of interest from fMRI data and thereby show the data contain information about them. In this tutorial overview we review some of the key choices faced in using this approach as well as how to derive statistically significant results, illustrating each point from a case study. Furthermore, we show how, in addition to answering the question of 'is there information about a variable of interest' (pattern discrimination), classifiers can be used to tackle other classes of question, namely 'where is the information' (pattern localization) and 'how is that information encoded' (pattern characterization).},
-author = {Pereira, Francisco and Mitchell, Tom and Botvinick, Matthew},
-booktitle = {NeuroImage},
-doi = {10.1016/j.neuroimage.2008.11.007},
-file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Pereira, Mitchell, Botvinick - 2009 - Machine learning classifiers and fMRI a tutorial overview.pdf:pdf},
-isbn = {1095-9572 (Electronic)$\backslash$n1053-8119 (Linking)},
+@article{Challis2015,
+abstract = {Multivariate pattern analysis and statistical machine learning techniques are attracting increasing interest from the neuroimaging community. Researchers and clinicians are also increasingly interested in the study of functional-connectivity patterns of brains at rest and how these relations might change in conditions like Alzheimer's disease or clinical depression. In this study we investigate the efficacy of a specific multivariate statistical machine learning technique to perform patient stratification from functional-connectivity patterns of brains at rest. Whilst the majority of previous approaches to this problem have employed support vector machines (SVMs) we investigate the performance of Bayesian Gaussian process logistic regression (GP-LR) models with linear and non-linear covariance functions. GP-LR models can be interpreted as a Bayesian probabilistic analogue to kernel SVM classifiers. However, GP-LR methods confer a number of benefits over kernel SVMs. Whilst SVMs only return a binary class label prediction, GP-LR, being a probabilistic model, provides a principled estimate of the probability of class membership. Class probability estimates are a measure of the confidence the model has in its predictions, such a confidence score may be extremely useful in the clinical setting. Additionally, if miss-classification costs are not symmetric, thresholds can be set to achieve either strong specificity or sensitivity scores. Since GP-LR models are Bayesian, computationally expensive cross-validation hyper-parameter grid-search methods can be avoided. We apply these methods to a sample of 77 subjects; 27 with a diagnosis of probable AD, 50 with a diagnosis of a-MCI and a control sample of 39. All subjects underwent a MRI examination at 3. T to obtain a 7. minute and 20. second resting state scan. Our results support the hypothesis that GP-LR models can be effective at performing patient stratification: the implemented model achieves 75{\%} accuracy disambiguating healthy subjects from subjects with amnesic mild cognitive impairment and 97{\%} accuracy disambiguating amnesic mild cognitive impairment subjects from those with Alzheimer's disease, accuracies are estimated using a held-out test set. Both results are significant at the 1{\%} level.},
+author = {Challis, Edward and Hurley, Peter and Serra, Laura and Bozzali, Marco and Oliver, Seb and Cercignani, Mara},
+doi = {10.1016/j.neuroimage.2015.02.037},
+file = {:Users/allisonburton/Downloads/gaussian.pdf:pdf;:Users/allisonburton/Downloads/mmc1.docx:docx},
+isbn = {1095-9572 (Electronic)$\backslash$r1053-8119 (Linking)},
 issn = {10959572},
-pmid = {19070668},
-title = {{Machine learning classifiers and fMRI: a tutorial overview.}},
-year = {2009}
+journal = {NeuroImage},
+keywords = {Dementia,Functional connectivity,Machine learning},
+pages = {232--243},
+pmid = {25731993},
+publisher = {Elsevier Inc.},
+title = {{Gaussian process classification of Alzheimer's disease and mild cognitive impairment from resting-state fMRI}},
+url = {http://dx.doi.org/10.1016/j.neuroimage.2015.02.037},
+volume = {112},
+year = {2015}
 }
-@article{Sperling2011,
-abstract = {Functional magnetic resonance imaging (fMRI) is a relative newcomer in the field of biomarkers for Alzheimer's disease (AD). fMRI has several potential advantages, particularly for clinical trials, as it is a noninvasive imaging technique that does not require the injection of contrast agent or radiation exposure and thus can be repeated many times during a longitudinal study. fMRI has relatively high spatial and reasonable temporal resolution, and can be acquired in the same session as structural magnetic resonance imaging. Perhaps most importantly, fMRI may provide useful information about the functional integrity of brain networks supporting memory and other cognitive domains, including the neural correlates of specific behavioral events, such as successful versus failed memory formation. ?? 2011 Elsevier Inc.},
-author = {Sperling, Reisa},
-doi = {10.1016/j.neurobiolaging.2011.09.009},
-file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Sperling - 2011 - The potential of functional MRI as a biomarker in early Alzheimer's disease.pdf:pdf},
-isbn = {1558-1497 (Electronic)$\backslash$n0197-4580 (Linking)},
-issn = {01974580},
-journal = {Neurobiology of Aging},
-keywords = {Alzheimer's disease,Biomarker,Cognitive impairment,Dementia,FMRI,Functional magnetic resonance imaging},
-mendeley-tags = {Alzheimer's disease,Biomarker,Cognitive impairment,Dementia,FMRI,Functional magnetic resonance imaging},
-number = {32},
-pages = {S37--S43},
-pmid = {22078171},
-title = {{The potential of functional MRI as a biomarker in early Alzheimer's disease}},
-volume = {December 2},
+@article{Khazaee2015,
+abstract = {The study of brain networks by resting-state functional magnetic resonance imaging (rs-fMRI) is a promising method for identifying patients with dementia from healthy controls (HC). Using graph theory, different aspects of the brain network can be efficiently characterized by calculating measures of integration and segregation. In this study, we combined a graph theoretical approach with advanced machine learning methods to study the brain network in 89 patients with mild cognitive impairment (MCI), 34 patients with Alzheimer's disease (AD), and 45 age-matched HC. The rs-fMRI connectivity matrix was constructed using a brain parcellation based on a 264 putative functional areas. Using the optimal features extracted from the graph measures, we were able to accurately classify three groups (i.e., HC, MCI, and AD) with accuracy of 88.4 {\%}. We also investigated performance of our proposed method for a binary classification of a group (e.g., MCI) from two other groups (e.g., HC and AD). The classification accuracies for identifying HC from AD and MCI, AD from HC and MCI, and MCI from HC and AD, were 87.3, 97.5, and 72.0 {\%}, respectively. In addition, results based on the parcellation of 264 regions were compared to that of the automated anatomical labeling atlas (AAL), consisted of 90 regions. The accuracy of classification of three groups using AAL was degraded to 83.2 {\%}. Our results show that combining the graph measures with the machine learning approach, on the basis of the rs-fMRI connectivity analysis, may assist in diagnosis of AD and MCI.},
+author = {Khazaee, Ali and Ebrahimzadeh, Ata and Babajani-Feremi, Abbas},
+doi = {10.1007/s11682-015-9448-7},
+file = {:Users/allisonburton/Downloads/khazaee{\_}et{\_}al.pdf:pdf},
+isbn = {1168201594},
+issn = {19317565},
+journal = {Brain Imaging and Behavior},
+keywords = {Alzheimer's disease (AD),Graph theory,Machine learning,Mild cognitive impairment (MCI),Resting-state functional magnetic resonance imagin,Support vector machine (SVM)},
+pmid = {26363784},
+title = {{Application of advanced machine learning methods on resting-state fMRI network for identification of mild cognitive impairment and Alzheimer's disease}},
+year = {2015}
+}
+@article{Li2013,
+abstract = {The purpose of this study is to explore the changes in functional brain networks of AD patients using complex network theory. In this study, resting-state fMRI datasets of 10 AD patients and 11 healthy controls were collected. Time series of 90 brain regions were extracted from the fMRI datasets after preprocessing. Pearson correlation method was used to calculate the correlation coefficient between any two time series. Then, a wide threshold range was selected to transform the adjacency matrix to a binary matrix under a different threshold. The topology parameters of each binary network were calculated, and all of them were then averaged within a group. During the evolution, node betweenness and the Euclidean distance between the nodes were set as control factors. Each binary network of healthy controls underwent evolution of 100 steps in accordance with the evolution rules. Then, the topology parameters of the evolution network were calculated. Finally, support vector machine (SVM) was used to classify the network topology parameters of the evolution network and to determine whether evolution results matched the datasets from AD patients. We found there were differing degrees of decline in global efficiency, clustering coefficient, number of edges and transitivity in AD patients compared with healthy controls. The topology parameters of the evolution network tended toward those of the AD group. The results of SVM classification of the evolution network show that the evolution network had a greater probability to be classified as an AD patients group. A new biological marker for diagnosis of AD was provided through comparison of topology parameters between AD patients and healthy controls. The study of network evolution strategies enriched the method of brain network evolution. The use of SVM to classify the results of network evolution provides an objective criteria for determining evolution results.},
+author = {Li, YaPeng and Qin, Yuanyuan and Chen, Xi and Li, Wei},
+doi = {10.1371/journal.pone.0073186},
+file = {:Users/allisonburton/Downloads/Li{\_}et{\_}al.PDF:PDF},
+issn = {1932-6203},
+journal = {PloS one},
+keywords = {Aged,Alzheimer Disease,Alzheimer Disease: physiopathology,Brain,Brain Mapping,Brain: physiopathology,Case-Control Studies,Female,Humans,Magnetic Resonance Imaging,Male,Middle Aged,Nerve Net,Support Vector Machines},
+number = {9},
+pages = {e73186},
+pmid = {24019905},
+title = {{Exploring the functional brain network of Alzheimer's disease: based on the computational experiment.}},
+url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3760893{\&}tool=pmcentrez{\&}rendertype=abstract},
+volume = {8},
+year = {2013}
+}
+@techreport{Palatucci,
+abstract = {Modern classification techniques performwell when the num- ber of training examples exceed the number of features. If, however, the number of features greatly exceed the number of training examples, then these same techniques can fail. To address this problem, we present a hierarchical Bayesian framework that shares information between fea- tures by modeling similarities between their parameters.We believe this approach is applicable to many sparse, high dimensional problems and especially relevant to those with both spatial and temporal components. One such problem is fMRI time series, and we present a case study that shows how we can successfully classify in this domain with 80,000 original features and only 2 training examples per class.},
+address = {Pittsburgh, PA},
+author = {Palatucci, Mark and Mitchell, Tom M.},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Unknown - Unknown - ecml{\_}2007.pdf:pdf},
+institution = {Carnegie Mellon University},
+title = {{Classification in Very High Dimensional Problems with Handfuls of Examples}}
+}
+@article{Ye2011,
+author = {Ye, Jieping and Wu, Teresa and Li, Jing and Chen, Kewei},
+file = {:Users/allisonburton/Downloads/machinelearning11112011.pdf:pdf},
+journal = {IEEE Computer},
+number = {4},
+pages = {99--101},
+title = {{Machine Learning Approaches for the Neuroimaging Study of Alzheimer's Disease}},
+volume = {44},
 year = {2011}
+}
+@misc{Yuhas2012,
+author = {Yuhas, Daisy},
+booktitle = {Scientific American Observations Blog},
+title = {{What's a Voxel and What Can It Tell Us? A Primer on fMRI}},
+url = {http://blogs.scientificamerican.com/observations/whats-a-voxel-and-what-can-it-tell-us-a-primer-on-fmri/},
+year = {2012}
+}
+@misc{,
+doi = {10.1016/j.clinph.2015.02.060},
+title = {{Identifying patients with Alzheimer's disease using resting-state fMRI and graph theory}},
+url = {Identifying patients with Alzheimer's disease using resting-state fMRI and graph theory}
+}
+@misc{AlzheimersAssociation2016,
+author = {{Alzheimer's Association}},
+title = {{What is Alzheimer's?}},
+url = {http://www.alz.org/alzheimers_disease_what_is_alzheimers.asp},
+urldate = {2016-01-01},
+year = {2016}
+}
+@unpublished{AlzheimersAssociation,
+author = {{Alzheimer's Association}},
+title = {{2016 Alzheimer's Disease Facts and Figures}},
+url = {http://www.alz.org/facts/overview.asp}
+}
+@article{Orru2012,
+abstract = {Standard univariate analysis of neuroimaging data has revealed a host of neuroanatomical and functional differences between healthy individuals and patients suffering a wide range of neurological and psychiatric disorders. Significant only at group level however these findings have had limited clinical translation, and recent attention has turned toward alternative forms of analysis, including Support-Vector-Machine (SVM). A type of machine learning, SVM allows categorisation of an individual's previously unseen data into a predefined group using a classification algorithm, developed on a training data set. In recent years, SVM has been successfully applied in the context of disease diagnosis, transition prediction and treatment prognosis, using both structural and functional neuroimaging data. Here we provide a brief overview of the method and review those studies that applied it to the investigation of Alzheimer's disease, schizophrenia, major depression, bipolar disorder, presymptomatic Huntington's disease, Parkinson's disease and autistic spectrum disorder. We conclude by discussing the main theoretical and practical challenges associated with the implementation of this method into the clinic and possible future directions. {\textcopyright} 2012 Elsevier Ltd.},
+author = {Orr{\`{u}}, Graziella and Pettersson-Yeo, William and Marquand, Andre F. and Sartori, Giuseppe and Mechelli, Andrea},
+doi = {10.1016/j.neubiorev.2012.01.004},
+file = {:Users/allisonburton/Downloads/orru{\_}et{\_}al.pdf:pdf},
+isbn = {1873-7528},
+issn = {01497634},
+journal = {Neuroscience and Biobehavioral Reviews},
+keywords = {Alzheimer's disease,Autistic spectrum disorder,Bipolar disorder,Diagnosis,Machine learning,Major depression,Neuroimaging,Prediction,Schizophrenia,Support Vector Machine},
+number = {4},
+pages = {1140--1152},
+pmid = {22305994},
+publisher = {Elsevier Ltd},
+title = {{Using Support Vector Machine to identify imaging biomarkers of neurological and psychiatric disease: A critical review}},
+url = {http://dx.doi.org/10.1016/j.neubiorev.2012.01.004},
+volume = {36},
+year = {2012}
+}
+@article{Padilla2012,
+abstract = {This paper presents a novel computer-aided diagnosis (CAD) technique for the early diagnosis of the Alzheimer's disease (AD) based on nonnegative matrix factorization (NMF) and support vector machines (SVM) with bounds of confidence. The CAD tool is designed for the study and classification of functional brain images. For this purpose, two different brain image databases are selected: a single photon emission computed tomography (SPECT) database and positron emission tomography (PET) images, both of them containing data for both Alzheimer's disease (AD) patients and healthy controls as a reference. These databases are analyzed by applying the Fisher discriminant ratio (FDR) and nonnegative matrix factorization (NMF) for feature selection and extraction of the most relevant features. The resulting NMF-transformed sets of data, which contain a reduced number of features, are classified by means of a SVM-based classifier with bounds of confidence for decision. The proposed NMF-SVM method yields up to 91{\%} classification accuracy with high sensitivity and specificity rates (upper than 90{\%}). This NMF-SVM CAD tool becomes an accurate method for SPECT and PET AD image classification.},
+author = {Padilla, P. and Lopez, M. and Gorriz, J. M. and Ramirez, J. and Salas-Gonzalez, D. and Alvarez, I.},
+doi = {10.1109/TMI.2011.2167628},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Padilla et al. - 2012 - NMF-SVM based CAD tool applied to functional brain images for the diagnosis of Alzheimer's disease.pdf:pdf},
+isbn = {1558-254X (Electronic)$\backslash$n0278-0062 (Linking)},
+issn = {02780062},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Alzheimer's disease,nonnegative matrix factorization,positron emission tomography (PET),single photon emission computed tomography (SPECT),support vector machines (SVMs)},
+mendeley-tags = {Alzheimer's disease,nonnegative matrix factorization,positron emission tomography (PET),single photon emission computed tomography (SPECT),support vector machines (SVMs)},
+number = {2},
+pages = {207--216},
+pmid = {21914569},
+title = {{NMF-SVM based CAD tool applied to functional brain images for the diagnosis of Alzheimer's disease}},
+volume = {31},
+year = {2012}
+}
+@article{Trambaiolli2011,
+abstract = {There is not a specific test to diagnose Alzheimer's disease (AD). Its diagnosis should be based upon clinical history, neuropsychological and laboratory tests, neuroimaging and electroencephalography (EEG). Therefore, new approaches are necessary to enable earlier and more accurate diagnosis and to follow treatment results. In this study we used a Machine Learning (ML) technique, named Support Vector Machine (SVM), to search patterns in EEG epochs to differentiate AD patients from controls. As a result, we developed a quantitative EEG (qEEG) processing method for automatic differentiation of patients with AD from normal individuals, as a complement to the diagnosis of probable dementia. We studied EEGs from 19 normal subjects (14 females/5 males, mean age 71.6 years) and 16 probable mild to moderate symptoms AD patients (14 females/2 males, mean age 73.4 years. The results obtained from analysis of EEG epochs were accuracy 79.9{\%} and sensitivity 83.2{\%}. The analysis considering the diagnosis of each individual patient reached 87.0{\%} accuracy and 91.7{\%} sensitivity.},
+author = {Trambaiolli, Lucas R and Lorena, Ana C and Fraga, Francisco J and Kanda, Paulo a M and Anghinah, Renato and Nitrini, Ricardo},
+doi = {10.1177/155005941104200304},
+file = {:Users/allisonburton/Downloads/trambaiolli{\_}et{\_}al.pdf:pdf},
+issn = {1550-0594},
+journal = {Clinical EEG and neuroscience : official journal of the EEG and Clinical Neuroscience Society (ENCS)},
+number = {3},
+pages = {160--165},
+pmid = {21870467},
+title = {{Improving Alzheimer's disease diagnosis with machine learning techniques.}},
+volume = {42},
+year = {2011}
+}
+@article{Honorio,
+abstract = {Our aim in this chapter is to study the conditions for the reasonably good performance of classifiers on brain functional magnetic resonance imaging. We propose a synthetic model for the systematic study of aspects such as dimensionality, sample size, subject variability and noise. Our simulations highlight the key factors that affect generalization accuracy.},
+author = {Honorio, Jean},
+file = {:Users/allisonburton/Downloads/classification{\_}fmri.pdf:pdf},
+pages = {1--13},
+title = {{Classification on Brain Functional Magnetic Resonance Imaging: Dimensionality, Sample Size, Subject Variability and Noise}}
+}
+@article{Honorio2012,
+abstract = {We perform prediction of diverse disorders (cocaine
+use, schizophrenia and Alzheimer's disease) in unseen subjects
+from brain functional magnetic resonance imaging. First, we show
+that for multisubject prediction of simple cognitive states (e.g.,
+motor versus calculation and reading), voxels-as-features methods
+produce clusters that are similar for different leave-one-subject-
+out folds; while for group classification (e.g., cocaine addicted
+versus control subjects), voxels are scattered and less stable. Therefore,
+we chose to use a single region per experimental condition and
+a majority vote classifier. Interestingly, our method outperforms
+state-of-the-art techniques. Our method can integrate multiple experimental
+conditions and successfully predict disorders in unseen
+subjects (leave-one-subject-out generalization accuracy: 89.3{\%}
+and 90.9{\%} for cocaine use, 96.4{\%} for schizophrenia and 81.5{\%}
+for Alzheimer's disease). Our experimental results not only span
+diverse disorders, but also different experimental designs (block
+design and event related tasks), facilities, magnetic fields (1.5T, 3T,
+4T) and speed of acquisition (interscan interval from 1600 to 3500
+ms). We further argue that our method produces a meaningful
+low-dimensional representation that retains discriminability.},
+author = {Honorio, Jean and Tomasi, Dardo and Goldstein, Rita Z. and Leung, Hoi-Chung and Samaras, Dimitris},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Honorio et al. - 2012 - Can a Single Brain Region Predict a Disorder.pdf:pdf},
+journal = {IEEE Transactions on Medical Imaging},
+number = {11},
+pages = {2062--2072},
+title = {{Can a Single Brain Region Predict a Disorder?}},
+volume = {31},
+year = {2012}
+}
+@article{Sarraf2016,
+abstract = {Over the past decade, machine learning techniques especially predictive modeling and pattern recognition in biomedical sciences from drug delivery system to medical imaging has become one of the important methods which are assisting researchers to have deeper understanding of entire issue and to solve complex medical problems. Deep learning is power learning machine learning algorithm in classification while extracting high-level features. In this paper, we used convolutional neural network to classify Alzheimer's brain from normal healthy brain. The importance of classifying this kind of medical data is to potentially develop a predict model or system in order to recognize the type disease from normal subjects or to estimate the stage of the disease. Classification of clinical data such as Alzheimer's disease has been always challenging and most problematic part has been always selecting the most discriminative features. Using Convolutional Neural Network (CNN) and the famous architecture LeNet-5, we successfully classified functional MRI data of Alzheimer's subjects from normal controls where the accuracy of test data on trained data reached 96.85{\%}. This experiment suggests us the shift and scale invariant features extracted by CNN followed by deep learning classification is most powerful method to distinguish clinical data from healthy data in fMRI. This approach also enables us to expand our methodology to predict more complicated systems.},
+archivePrefix = {arXiv},
+arxivId = {1603.08631},
+author = {Sarraf, Saman and Tofighi, Ghassem},
+eprint = {1603.08631},
+file = {:Users/allisonburton/Downloads/1603.08631v1.pdf:pdf},
+pages = {8--12},
+title = {{Classification of Alzheimer's Disease using fMRI Data and Deep Learning Convolutional Neural Networks}},
+url = {http://arxiv.org/abs/1603.08631},
+year = {2016}
 }
 @article{Tripoliti2010,
 abstract = {The aim of this work is to present an automated method that assists in the diagnosis of Alzheimer's disease and also supports the monitoring of the progression of the disease. The method is based on features extracted from the data acquired during an fMRI experiment. It consists of six stages: (a) preprocessing of fMRI data, (b) modeling of fMRI voxel time series using a Generalized Linear Model, (c) feature extraction from the fMRI data, (d) feature selection, (e) classification using classical and improved variations of the Random Forests algorithm and Support Vector Machines, and (f) conversion of the trees, of the Random Forest, to rules which have physical meaning. The method is evaluated using a dataset of 41 subjects. The results of the proposed method indicate the validity of the method in the diagnosis (accuracy 94{\%}) and monitoring of the Alzheimer's disease (accuracy 97{\%} and 99{\%}). ?? 2009 Elsevier Inc. All rights reserved.},
@@ -98,24 +218,166 @@ url = {http://dx.doi.org/10.1016/j.jbi.2009.10.004},
 volume = {43},
 year = {2010}
 }
-@misc{AlzheimersAssociation2016,
-author = {{Alzheimer's Association}},
-title = {{What is Alzheimer's?}},
-url = {http://www.alz.org/alzheimers\_disease\_what\_is\_alzheimers.asp},
-urldate = {2016},
-year = {2016}
+@article{Dickerson2008,
+abstract = {Functional MRI (fMRI) studies of mild cognitive impairment (MCI) and Alzheimer's disease (AD) have begun to reveal abnormalities in memory circuit function in humans suffering from memory disorders. Since the medial temporal lobe (MTL) memory system is a site of very early pathology in AD, a number of studies, reviewed here, have focused on this region of the brain. By the time individuals are diagnosed clinically with AD dementia, the substantial memory impairments appear to be associated with not only MTL atrophy but also hypoactivation during memory task performance. Prior to dementia, when individuals are beginning to manifest signs and symptoms of memory impairment, the hippocampal formation and other components of the MTL memory system exhibit substantial functional abnormalities during memory task performance. It appears that, early in the course of MCI when memory deficits and hippocampal atrophy are less prominent, there may be hyperactivation of MTL circuits, possibly representing inefficient compensatory activity. Later in the course of MCI, when considerable memory deficits are present, MTL regions are no longer able to activate during attempted learning, as is the case in AD dementia. Recent fMRI data in MCI and AD are beginning to reveal relationships between abnormalities of functional activity in the MTL memory system and in functionally connected brain regions, such as the precuneus. As this work continues to mature, it will likely contribute to our understanding of fundamental memory processes in the human brain and how these are perturbed in memory disorders. We hope these insights will translate into the incorporation of measures of task-related brain function into diagnostic assessment or therapeutic monitoring, such as for use in clinical trials. ?? 2007 Elsevier Ltd. All rights reserved.},
+author = {Dickerson, Bradford C. and Sperling, Reisa A.},
+doi = {10.1016/j.neuropsychologia.2007.11.030},
+file = {:Users/allisonburton/Downloads/dickerson{\_}et{\_}al.pdf:pdf},
+isbn = {0028-3932},
+issn = {00283932},
+journal = {Neuropsychologia},
+keywords = {Alzheimer's disease,Entorhinal cortex,Functional magnetic resonance imaging,Hippocampus,Mild cognitive impairment,Parahippocampal gyrus},
+number = {6},
+pages = {1624--1635},
+pmid = {18206188},
+title = {{Functional abnormalities of the medial temporal lobe memory system in mild cognitive impairment and Alzheimer's disease: Insights from functional MRI studies}},
+volume = {46},
+year = {2008}
 }
-@unpublished{AlzheimersAssociation,
-author = {{Alzheimer's Association}},
-title = {{2016 Alzheimer's Disease Facts and Figures}},
-url = {http://www.alz.org/facts/overview.asp},
-urldate = {2016},
-year = {2016}
+@incollection{Kvisito,
+author = {Kivisit{\"{o}}, Julia and Soininen, Hilkka and Pihlajam{\"{a}}ki, Maija},
+booktitle = {Advanced Brain Neuroimaging Topics in Health and Disease - Methods and Applications},
+chapter = {19},
+doi = {10.5772/47912},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Kvisit{\"{o}}, Soininen, Pihlajam{\"{a}}ki - Unknown - Functional MRI in Alzheimer's Disease.pdf:pdf},
+pages = {509--531},
+title = {{Functional MRI in Alzheimer's Disease}}
 }
-@misc{Yuhas2012,
-author = {Yuhas, Daisy},
-booktitle = {Scientific American Observations Blog},
-title = {{What's a Voxel and What Can It Tell Us? A Primer on fMRI}},
-url = {http://blogs.scientificamerican.com/observations/whats-a-voxel-and-what-can-it-tell-us-a-primer-on-fmri/},
-year = {2012}
+@article{Armananzas2016,
+abstract = {Functional magnetic resonance imaging (fMRI) is one of the most promising non-invasive techniques for early Alzheimer's disease (AD) diagnosis. In this paper, we explore the application of different machine learning techniques to the classification of fMRI data for this purpose. The functional images were firstly preprocessed using the statistical parametric mapping toolbox to output individual maps of statistically activated voxels. A fast filter was applied afterwards to select voxels commonly activated across demented and non-demented groups. Four feature ranking selection techniques were embedded into a wrapper scheme using an inner-outer loop for the selection of relevant voxels. The wrapper approach was guided by the performance of six pattern recognition models, three of which were ensemble classifiers based on stochastic searches. Final classification performance was assessed from the nested internal and external cross-validation loops taking several voxel sets ordered by importance. Numerical performance was evaluated using statistical tests, and the best combination of voxel selection and classification reached a 97.14{\%} average accuracy. Results repeatedly pointed out Brodmann regions with distinct activation patterns between demented and non demented profiles, indicating that the machine learning analysis described is a powerful method to detect differences in several brain regions between both groups.},
+author = {Armananzas, R and Iglesias, M and Morales, D A and Alonso-Nanclares, L},
+doi = {10.1109/JBHI.2016.2538559},
+file = {:Users/allisonburton/Downloads/voxel.pdf:pdf},
+issn = {2168-2194},
+journal = {IEEE J Biomed Health Inform},
+number = {X},
+pages = {1--7},
+title = {{Voxel-based diagnosis of Alzheimer's disease using classifier ensembles}},
+volume = {XX},
+year = {2015}
+}
+@article{Sperling2011,
+abstract = {Functional magnetic resonance imaging (fMRI) is a relative newcomer in the field of biomarkers for Alzheimer's disease (AD). fMRI has several potential advantages, particularly for clinical trials, as it is a noninvasive imaging technique that does not require the injection of contrast agent or radiation exposure and thus can be repeated many times during a longitudinal study. fMRI has relatively high spatial and reasonable temporal resolution, and can be acquired in the same session as structural magnetic resonance imaging. Perhaps most importantly, fMRI may provide useful information about the functional integrity of brain networks supporting memory and other cognitive domains, including the neural correlates of specific behavioral events, such as successful versus failed memory formation. ?? 2011 Elsevier Inc.},
+author = {Sperling, Reisa},
+doi = {10.1016/j.neurobiolaging.2011.09.009},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Sperling - 2011 - The potential of functional MRI as a biomarker in early Alzheimer's disease.pdf:pdf},
+isbn = {1558-1497 (Electronic)$\backslash$n0197-4580 (Linking)},
+issn = {01974580},
+journal = {Neurobiology of Aging},
+keywords = {Alzheimer's disease,Biomarker,Cognitive impairment,Dementia,FMRI,Functional magnetic resonance imaging},
+mendeley-tags = {Alzheimer's disease,Biomarker,Cognitive impairment,Dementia,FMRI,Functional magnetic resonance imaging},
+number = {32},
+pages = {S37--S43},
+pmid = {22078171},
+title = {{The potential of functional MRI as a biomarker in early Alzheimer's disease}},
+volume = {December 2},
+year = {2011}
+}
+@article{Moradi2015,
+abstract = {Mild cognitive impairment (MCI) is a transitional stage between age-related cognitive decline and Alzheimer's disease (AD). For the effective treatment of AD, it would be important to identify MCI patients at high risk for conversion to AD. In this study, we present a novel magnetic resonance imaging (MRI)-based method for predicting the MCI-to-AD conversion from one to three years before the clinical diagnosis. First, we developed a novel MRI biomarker of MCI-to-AD conversion using semi-supervised learning and then integrated it with age and cognitive measures about the subjects using a supervised learning algorithm resulting in what we call the aggregate biomarker. The novel characteristics of the methods for learning the biomarkers are as follows: 1) We used a semi-supervised learning method (low density separation) for the construction of MRI biomarker as opposed to more typical supervised methods; 2) We performed a feature selection on MRI data from AD subjects and normal controls without using data from MCI subjects via regularized logistic regression; 3) We removed the aging effects from the MRI data before the classifier training to prevent possible confounding between AD and age related atrophies; and 4) We constructed the aggregate biomarker by first learning a separate MRI biomarker and then combining it with age and cognitive measures about the MCI subjects at the baseline by applying a random forest classifier. We experimentally demonstrated the added value of these novel characteristics in predicting the MCI-to-AD conversion on data obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database. With the ADNI data, the MRI biomarker achieved a 10-fold cross-validated area under the receiver operating characteristic curve (AUC) of 0.7661 in discriminating progressive MCI patients (pMCI) from stable MCI patients (sMCI). Our aggregate biomarker based on MRI data together with baseline cognitive measurements and age achieved a 10-fold cross-validated AUC score of 0.9020 in discriminating pMCI from sMCI. The results presented in this study demonstrate the potential of the suggested approach for early AD diagnosis and an important role of MRI in the MCI-to-AD conversion prediction. However, it is evident based on our results that combining MRI data with cognitive test results improved the accuracy of the MCI-to-AD conversion prediction.},
+author = {Moradi, Elaheh and Pepe, Antonietta and Gaser, Christian and Huttunen, Heikki and Tohka, Jussi},
+doi = {10.1016/j.neuroimage.2014.10.002},
+file = {:Users/allisonburton/Downloads/moradi{\_}et{\_}al.pdf:pdf},
+isbn = {1053-8119},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {ADNI,Alzheimer's disease,Classification,Early diagnosis,Feature selection,Low density separation,Magnetic resonance imaging,Mild cognitive impairment,Semi-supervised learning,Support vector machine,low density separation,mild cognitive impairment},
+pages = {398--412},
+pmid = {25312773},
+publisher = {Elsevier Inc.},
+title = {{Machine learning framework for early MRI-based Alzheimer's conversion prediction in MCI subjects}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S1053811914008131$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/25312773},
+volume = {104},
+year = {2015}
+}
+@misc{Pereira2009,
+abstract = {Interpreting brain image experiments requires analysis of complex, multivariate data. In recent years, one analysis approach that has grown in popularity is the use of machine learning algorithms to train classifiers to decode stimuli, mental states, behaviours and other variables of interest from fMRI data and thereby show the data contain information about them. In this tutorial overview we review some of the key choices faced in using this approach as well as how to derive statistically significant results, illustrating each point from a case study. Furthermore, we show how, in addition to answering the question of 'is there information about a variable of interest' (pattern discrimination), classifiers can be used to tackle other classes of question, namely 'where is the information' (pattern localization) and 'how is that information encoded' (pattern characterization).},
+author = {Pereira, Francisco and Mitchell, Tom and Botvinick, Matthew},
+booktitle = {NeuroImage},
+doi = {10.1016/j.neuroimage.2008.11.007},
+file = {:Users/allisonburton/Library/Application Support/Mendeley Desktop/Downloaded/Pereira, Mitchell, Botvinick - 2009 - Machine learning classifiers and fMRI a tutorial overview.pdf:pdf},
+isbn = {1095-9572 (Electronic)$\backslash$n1053-8119 (Linking)},
+issn = {10959572},
+pmid = {19070668},
+title = {{Machine learning classifiers and fMRI: a tutorial overview.}},
+year = {2009}
+}
+
+% Optional fields: volume, number, pages, month, note
+@ARTICLE{Strimbu,
+	author = {Strimbu, Kyle and Tavel, Jorge A.},
+	title = {What are Biomarkers?},
+	journal = {Current Opinion HIV AIDS},
+	year = {2010},
+	pages = {463-466},
+	month = {November},
+	doi = {10.1097/COH.0b013e32833ed177}
+}
+
+@article{LeCun1998,
+	author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
+	file = {:Users/allisonburton/Documents/Princeton/JuniorYear/Spring/IW/papers/lecun-98.pdf:pdf},
+	isbn = {9788578110796},
+	issn = {1098-6596},
+	journal = {Proceedings of the IEEE},
+	keywords = {OCR,convolutional neural networks,document recognition,finite state transducers,gradient-based learning,graph transformer networks,machine learning,neural networks},
+	mendeley-groups = {IW Spring 2016},
+	pages = {1--46},
+	title = {{Gradient-Based Learning Applied to Document Recognition}},
+	volume = {11},
+	year = {1998}
+}
+
+@article{Wen2012,
+	abstract = {Context: Software development effort estimation (SDEE) is the process of predicting the effort required to develop a software system. In order to improve estimation accuracy, many researchers have proposed machine learning (ML) based SDEE models (ML models) since 1990s. However, there has been no attempt to analyze the empirical evidence on ML models in a systematic way. Objective: This research aims to systematically analyze ML models from four aspects: type of ML technique, estimation accuracy, model comparison, and estimation context. Method: We performed a systematic literature review of empirical studies on ML model published in the last two decades (1991-2010). Results: We have identified 84 primary studies relevant to the objective of this research. After investigating these studies, we found that eight types of ML techniques have been employed in SDEE models. Overall speaking, the estimation accuracy of these ML models is close to the acceptable level and is better than that of non-ML models. Furthermore, different ML models have different strengths and weaknesses and thus favor different estimation contexts. Conclusion: ML models are promising in the field of SDEE. However, the application of ML models in industry is still limited, so that more effort and incentives are needed to facilitate the application of ML models. To this end, based on the findings of this review, we provide recommendations for researchers as well as guidelines for practitioners. {\textcopyright} 2011 Elsevier B.V. All rights reserved.},
+	author = {Wen, Jianfeng and Li, Shixian and Lin, Zhiyong and Hu, Yong and Huang, Changqin},
+	doi = {10.1016/j.infsof.2011.09.002},
+	file = {:Users/allisonburton/Documents/Princeton/JuniorYear/Spring/IW/papers/Wen - software development effort estimation models - 2012.pdf:pdf},
+	isbn = {0950-5849},
+	issn = {09505849},
+	journal = {Information and Software Technology},
+	keywords = {Machine learning,Software effort estimation,Systematic literature review},
+	mendeley-groups = {IW Spring 2016},
+	number = {1},
+	pages = {41--59},
+	publisher = {Elsevier B.V.},
+	title = {{Systematic literature review of machine learning based software development effort estimation models}},
+	url = {http://dx.doi.org/10.1016/j.infsof.2011.09.002},
+	volume = {54},
+	year = {2012}
+}
+
+@article{Martinez2001,
+abstract = {In the context of the appearance-based paradigm for object$\backslash$nrecognition, it is generally believed that algorithms based on LDA$\backslash$n(linear discriminant analysis) are superior to those based on PCA$\backslash$n(principal components analysis). In this communication, we show that$\backslash$nthis is not always the case. We present our case first by using$\backslash$nintuitively plausible arguments and, then, by showing actual results on$\backslash$na face database. Our overall conclusion is that when the training data$\backslash$nset is small, PCA can outperform LDA and, also, that PCA is less$\backslash$nsensitive to different training data sets},
+author = {Martinez, Aleix M. and Kak, Avinash C.},
+doi = {10.1109/34.908974},
+file = {:Users/allisonburton/Documents/Princeton/JuniorYear/Spring/IW/papers/pami01.pdf:pdf},
+isbn = {0162-8828},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+mendeley-groups = {IW Spring 2016},
+number = {2},
+pages = {228--233},
+pmid = {18438496},
+title = {{PCA versus LDA}},
+volume = {23},
+year = {2001}
+}
+
+@article{Liong2013,
+abstract = {Linear discriminant analysis (LDA) and logistic regression (LR) are often used for the purpose of classifying populations or groups using a set of predictor variables. Assumptions of multivariate normality and equal variance-covariance matrices across groups are required before proceeding with LDA, but such assumptions are not required for LR and hence LR is considered to be much more robust than LDA. In this paper, several real datasets which are different in terms of normality, number of independent variables and sample size are used to study the performance of both methods. The methods are compared based on the percentage of correct classification and B index. The results show that overall, LR performs better regardless of the distribution of the data is normal or nonnormal. However, LR needs longer computing time than LDA with the increase in sample size. The performance of LDA was also tested by using various prior probabilities. The results show that the average percentage of correct classification and the B index are higher when the prior probability is set based on the group size rather than using equal probabilities for all groups. [ABSTRACT FROM AUTHOR]},
+author = {Liong, Choong-Yeun and Foo, Sin-Fan},
+doi = {10.1063/1.4801262},
+file = {:Users/allisonburton/Documents/Princeton/JuniorYear/Spring/IW/papers/Discriminant analysis 1.pdf:pdf},
+isbn = {9780735411500},
+issn = {0094243X},
+journal = {AIP Conference Proceedings},
+keywords = {COMPARATIVE studies,DATA analysis,DISCRIMINANT analysis,GROUP theory,LOGISTIC regression analysis,SET theory,VARIABLES (Mathematics)},
+mendeley-groups = {IW Spring 2016},
+number = {1},
+pages = {1159--1165},
+title = {{Comparison of linear discriminant analysis and logistic regression for data classification.}},
+url = {10.1063/1.4801262$\backslash$nhttp://lumen.cgsccarl.com/login?url=http://search.ebscohost.com/login.aspx?direct=true{\&}db=a9h{\&}AN=87085892{\&}site=ehost-live},
+volume = {1522},
+year = {2013}
 }

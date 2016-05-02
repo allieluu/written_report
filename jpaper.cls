@@ -36,7 +36,7 @@
 % \RequirePackage[utf8]{inputenc}
 % \RequirePackage[T1]{fontenc}
 \RequirePackage{verbatim}
-\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\RequirePackage[usenames,dvipsnames,svgnames,table, xcdraw]{xcolor}
 
 % Basic text typesetting options.
 \RequirePackage{mathptmx}
@@ -70,8 +70,9 @@
 \preauthor{\begin{center}\normalfont\large%
     \begin{tabular}[t]{c}}
 \postauthor{\end{tabular}\par\end{center}}
-\predate{}
-\postdate{}
+\predate{\begin{center}}
+%\date{}
+\postdate{\par\end{center}}
 
 
 % The abstract should be normally sized and italicized. Abstract leading
@@ -86,23 +87,23 @@
 
 % Compress vertical space around section and subsection headings. Make
 % subsubsection headings run-in (i.e. part of the following paragraph).
-\RequirePackage[compact]{titlesec}
-\titleformat{\section}[hang]{\normalfont\large\bfseries}{\thesection. }%
-  {0pt}{}{}
-\titleformat{\subsection}[hang]{\normalfont\bfseries}{\thesubsection. }%
-  {0pt}{}{}
-\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsubsection. }%
-  {0pt}{}{}
-\newlength{\sectionspace}
-\setlength{\sectionspace}{1.5ex plus 0.25ex}
-\titlespacing*{\section}{0pt}{\sectionspace}{\sectionspace}
-\titlespacing*{\subsection}{0pt}{\sectionspace}{\sectionspace}
-\titlespacing*{\subsubsection}{0pt}{\parskip}{0.25em plus 0.1em minus 0.05em}
+%\RequirePackage[compact]{titlesec}
+%\titleformat{\section}[hang]{\normalfont\large\bfseries}{\thesection. }%
+ % {0pt}{}{}
+%\titleformat{\subsection}[hang]{\normalfont\bfseries}{\thesubsection. }%
+%  {0pt}{}{}
+%\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsubsection. }%
+%  {0pt}{}{}
+%\newlength{\sectionspace}
+%\setlength{\sectionspace}{1.5ex plus 0.25ex}
+%\titlespacing*{\section}{0pt}{\sectionspace}{\sectionspace}
+%\titlespacing*{\subsection}{0pt}{\sectionspace}{\sectionspace}
+%\titlespacing*{\subsubsection}{0pt}{\parskip}{0.25em plus 0.1em minus 0.05em}
 
 % Compress itemize and enumerate environments.
 \RequirePackage{enumerate}
-\RequirePackage{enumitem}
-\setlist{noitemsep, leftmargin=*, topsep=0pt, partopsep=0pt}
+% \RequirePackage{enumitem}
+% \setlist{noitemsep, leftmargin=*, topsep=0pt, partopsep=0pt}
 
 % Bibliography formatting.
 \newcommand{\bibspacing}{\setstretch{0}}
@@ -123,7 +124,7 @@
 % Settings for figures and tables. Figure captions are placed below the figure,
 % while table captions are placed above the table. All captions are sans-serif.
 \RequirePackage[font={normalsize,sf,bf}]{caption}
-\RequirePackage[position=bottom]{subfig}
+%\RequirePackage[position=bottom]{subfig}
 \captionsetup[table]{aboveskip=0.5em, belowskip=0.5em}
 \captionsetup[figure]{aboveskip=0.5em, belowskip=0em}
 \captionsetup[subfloat]{font={small,sf}}
@@ -192,10 +193,10 @@
     unicode=true,%
     pdfstartview={FitH},%
     colorlinks=true,%
-    citecolor=red,%
+    citecolor=TealBlue,%
     %filecolor=black,%
-    %linkcolor=black,%
-    %urlcolor=black
+    linkcolor=TealBlue,%
+    urlcolor=TealBlue
 }}{}
 \RequirePackage{url}
 

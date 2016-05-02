@@ -1,0 +1,105 @@
+{
+    "name": "flare",
+    "children": [{
+        "name": "Classifier",
+        "children": [{
+            "name": "Type",
+            "size": "Number"
+        }]
+    }, {
+        "name": "SVM",
+        "children": [{
+            "name": "Seq. Min. Opt.",
+            "size": 1
+        }, {
+            "name": "LibLinear",
+            "size": 1
+        }, {
+            "name": "Rad. Basis Func.",
+            "size": 1
+        }, {
+            "name": "PR",
+            "size": 1
+        }, {
+            "name": "Lin. Reg.",
+            "size": 2
+        }, {
+            "name": "Gaussian",
+            "size": 1
+        }]
+    }, {
+        "name": "Naive Bayes",
+        "children": [{
+            "name": "other",
+            "size": 2
+        }, {
+            "name": "Gaussian",
+            "size": 1
+        }]
+    }, {
+        "name": "Rand. Forest",
+        "children": [{
+            "name": "reliefF",
+            "size": 1
+        }, {
+            "name": "mult. estimator.",
+            "size": 1
+        }, {
+            "name": "WV",
+            "size": 1
+        }]
+    }, {
+        "name": "Rand. Subspace",
+        "children": [{
+            "name": "Seq. Min. Opt.",
+            "size": 1
+        }]
+    }, {
+        "name": "Rand. Lin. Oracle",
+        "size": 1,
+        "children": [{
+            "name": "Seq. Min. Opt.",
+            "size": 1
+        }]
+    }, {
+        "name": "Log Regression",
+        "children": [{
+            "name": "GP",
+            "size": 1
+        }, {
+            "name": "Sparse",
+            "size": 1
+        }]
+    }, {
+        "name": "KNN",
+        "size": 2
+    }, {
+        "name": "Lin. Discriminant",
+        "size": 3,
+        "children": [{
+            "name": "Fisher",
+            "size": 2
+        }, {
+            "name": "other",
+            "size": 1
+        }]
+    }, {
+        "name": "Quad Classifier",
+        "size": 1
+    }, {
+        "name": "Decision tree",
+        "size": 1
+    }, {
+        "name": "LeNet-5",
+        "size": 1
+    }, {
+        "name": "Decision Stump",
+        "children": [{
+            "name": "AdaBoost",
+            "size": 1
+        }, {
+            "name": "Majority Vote",
+            "size": 1
+        }]
+    }]
+}
